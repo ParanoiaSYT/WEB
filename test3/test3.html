@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>相拥与独行</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name=keywords content="行内元素与块级元素">
+    <meta name="description" content="选集P9">
+    <meta name="author" content="SYT">
+    
+    <style>
+        span{color: red}
+        .bold{font-weight: bolder;}
+        .italic{font-style: italic;}
+        ul.a{list-style-type: circle;list-style-image: url(list1.jpg);}
+        ul.b{list-style-type: square;}
+        
+        table{
+            border: 1px solid black;
+/*            合并边框*/
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid red;
+/*        通过padding来调整单元格内边距*/
+            padding: 5px;
+        }
+        td{
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        caption{
+            padding: 5px;
+        }
+    </style>
+    </head>
+<body>
+    <table>
+        <caption>这是表格标题</caption>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>随便搞搞</th>
+        </tr>        
+        <tr>
+            <td>金吒</td>
+            <td>木吒</td>
+            <td>哪吒</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table>
+     <p><abbr title="一位诗人">顾城</abbr>黑夜给了我黑色的<br><span><ruby>眼<rt>yan</rt>睛<rt>jing</rt></ruby></span></p>
+    <p>我却用它来寻找<br><span>光明</span></p>
+    <p>鲁迅有云：<q>学医救不了中国！</q><span><dfn>html</dfn>是个术语</span></p>
+    <p><cite>《中国合伙人》</cite></p>
+    <blockquote cite="https://baijiahao.baidu.com/s?id=1609010108265066549&wfr=spider&for=pc">我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病。它真讨厌，只有一点好，<mark>爱你</mark>。</blockquote>
+    <p class="bold">这里的内容加粗比较好看</p>
+    <p class="italic">这里的内容倾斜比较好看</p>
+    
+    <ul class="a">
+        <li>无序列表1</li>
+    </ul>
+    <ul class="b">
+        <li>无序列表2</li>
+    </ul>
+    <ol type="i" reversed>
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+    </ol>
+    
+    <p><del>bbs.fishc.com</del>变为了<ins>fishc.com.cn</ins></p>
+    <p><s>男人应该三妻四妾</s></p>
+    <p>E<sub>0</sub>=mc<sup>2</sup></p>
+    <bdo dir="rtl">
+    <a href="https://paranoiasyt.github.io/WEB/" target="_blank">这里是web_code</a>
+    </bdo>
+    <address><strong>联系作者：</strong>
+    <pre>
+    地点：NJU
+    <small>vx：保密</small>
+    </pre>
+    </address>
+    </body>
+
+</html>

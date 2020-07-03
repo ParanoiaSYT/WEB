@@ -1,0 +1,26 @@
+body{background-image: url(../pictures/pic1.jpg)}
+h1{
+    color: red;
+    text-align: center;
+}
+p{
+    color: white;
+    text-indent: 32px;
+    font-size: 16px;
+    line-height: 32px;
+}
+a{
+    color: bisque;
+    background: green;
+    line-height: 60px;
+}
+h2{
+    margin-left: 60%;
+    color: white;
+}
+img{
+/*            position:absolute;*/
+    left: 50%;
+/*            margin-bottom: 100px;*/
+}
+

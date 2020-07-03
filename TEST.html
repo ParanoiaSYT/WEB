@@ -2,6 +2,53 @@
 <html>
 <head>
     <title>第一个程序</title>
+    <style type="text/css">
+        body{background-image: url(pictures/pic1.jpg)}
+        h1{
+            color: red;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-indent: 32px;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        a{
+            color: bisque;
+            background: green;
+            line-height: 60px;
+        }
+        h2{
+            margin-left: 60%;
+            color: white;
+        }
+        img{
+/*            position:absolute;*/
+            left: 50%;
+/*            margin-bottom: 100px;*/
+        }
+    </style>
+    
+<!--    这下面的style只针对打印模式-->
+    <style media="print">
+        h1{
+            color: black;
+        }
+        h2{
+            color: black
+        }
+        p{
+            color: black
+        }
+    </style>
+    
+    <style media="screen and (min-width:512px) and (max-width:1024px)">
+        body{
+            background-image: url(pictures/pic2.jpg)
+        }
+    </style>
+    
     <meta charset="utf-8">
 <!--    自适应-->
     <meta name='viewport' content="width=device-width,initial-scale=1.0">
@@ -9,14 +56,16 @@
     <meta name=keywords content="syt，webweb">
     <meta name="description" content="《零基础学习web开发》">
     <meta name="author" content="syt">
-    <meta http-equiv="refresh" content="5,https://paranoiasyt.github.io/YUC-Study/">
+<!--    页面自动跳转-->
+    <meta http-equiv="refresh" content="100,https://paranoiasyt.github.io/YUC-Study/">
     
 </head>
 <body>
     <h1>Hello World！！!<h1>
     <h2>SYT的第一个网页</h2>
-    <img src="WR.png" alt="风行者" width="100%" >
     <a href="https://paranoiasyt.github.io/YUC-Study/" target="_blank">点这里看到我的python代码</a>
-    <p>I love fishc</p>
+    <p>放船千里凌波去。略为吴山留顾。云屯水府，涛随神女，九江东注。北客翩然，壮心偏感，年华将暮。念伊嵩旧隐，巢由故友，南柯梦、遽如许。
+回首妖氛未扫，问人间、英雄何处。奇谋报国，可怜无用，尘昏白羽。铁锁横江，锦帆冲浪，孙郎良苦。但愁敲桂棹，悲吟梁父，泪流如雨。</p>
+    <img src="pictures/WR.png" alt="风行者" width="100%" >
 </body>
 </html>
