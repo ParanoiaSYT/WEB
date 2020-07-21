@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪选择器</title>
+    <style type="text/css">
+        p::first-line{
+            background-color: red;
+            color: green;
+        }
+        ::first-letter{
+            background-color: gray;
+            color: blueviolet;
+        }
+        a::before{
+            content: "这里是a标签开头";
+            content: url(1.png),width="212px",height="200px";
+        }
+        a::after{
+            content: "这里是a标签结尾";
+        }
+        ::selection{
+            background-color: greenyellow;
+            color: azure;
+        }
+        a:link{
+            color: pink;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: black; 
+        }
+        a:active{
+            color: green;
+        }
+        div:hover{
+            background-color: greenyellow;
+        }
+        :active{
+            color: bisque;
+        }
+        input#boy:focus{
+            background-color: azure;
+        }
+        input#girl:focus{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse vero, sapiente corrupti vel ex porro assumenda quo culpa sunt ab ullam eveniet minima accusantium quisquam cum debitis corporis delectus officiis.</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolorem quae quam odio quisquam suscipit saepe esse possimus. Ducimus dolor quae corporis, repellendus eius quia explicabo, molestiae delectus quod deserunt.</p>
+    <a href="https://ilovefishc.com" target="_blank">零基础学习web开发</a>
+    <br><br>
+    <input type="text" name="name" id="boy">
+    <input type="text" name="name" id="girl">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <meta charset="utf-8">
+    <title>图像映射</title>
+</head>
+<body>
+    <img src="%E6%A1%83%E8%8A%B1.png" alt="《web》" usemap="#book">
+    <map name="book">
+        <area shape="circle" coords="916,344,163" alt="peach" href="https://www.nju.edu.cn" target="_blank">
+        <area shape="poly" coords="279,230,867,549,636,975,46,655" alt="book" href="https://baidu.com" target="_blank">
+        <area shape="rect">
+        <area shape="rect" coords="710,818,886,1008" alt="Turtles" href="https://4399.com" target="_blank">
+    </map>
+    <picture>
+        <source media="{min-width:1024px}" srcset="WR.png">
+        <source media="{min-width:512px}" srcset="%E6%A1%83%E8%8A%B1.png">
+<!--        当浏览器不支持picture内容时，显示下面的icon1.png-->
+        <img src="icon1.png" alt="赛亚人" style="width: auto">
+    </picture>
+    <video src="speed.MOV" width="800" height="600" controls poster="WR.png" loop>
+        <track src="track.vtt" srclang="zh" label="中文字幕" kind="subtitles" default>
+        抱歉，无法播放。</video>
+    
+    <audio src="thunder.wav" controls>
+        不好意思，这个放不了嗷！
+    </audio>
+    
+</body>
+</html>

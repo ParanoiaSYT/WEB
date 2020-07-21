@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>这是一个简单的表单</title>    
+    </head>
+<body>
+    <form  target="_blank" action="welcome.php" method="post" autocomplete="off">
+        <br>
+        <label>你在找什么呢？？<input type="search" name="搜索"></label>
+            <br><br><br> 
+        <label>come on,选个颜色吧！<input type="color" name="color"></label>
+            <br><br><br>
+         <label>小桃夭按钮<input type="image" name="image" src="xty.png"></label>
+            <br><br><br>
+        <label>看不到我按钮<input type="hidden" value="隐藏按钮" disabled></label>
+        
+        <br><br><br>
+        <fieldset>  
+            <legend>基本信息</legend>
+    <!--        分块显示-->
+            <label>账号：<input type="text" name="Name" value="小甲鱼" autocomplete="on" readonly></label><br><br>
+            <label>性别：<input type="text" name="sex" value="女" disabled></label>
+            <br><br>
+            <label>年龄：<input type="number" name="number" min="1" max="200"></label>
+        </fieldset>  
+        <br><br>
+        <fieldset>
+            <legend>其余 信息</legend>
+            <label>男女：
+            <select name="sex">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+            </select>
+            </label>
+            <br><br>
+            <label for="pw">密码：</label><input type="password" autofocus name="Password" id="pw"><br><br>
+            <button type="submit" disabled>提交按钮</button>
+            <button type="reset">重写按钮</button><br><br>
+        </fieldset>
+        <fieldset>
+    <!--        input实现button操作-->
+            <input type="button" name="name" value="input普通按钮">
+            <input type="reset" name="reset" value="input重写按钮"><br><br>
+    <!--        单选框-->
+            <label><input type="radio" name="sex" value="male">男</label>
+            <label><input type="radio" name="sex" value="female">女</label>
+            <br><br><br>
+    <!--        复选框-->
+            <input type="checkbox" name="heroes[]" value="lion">莱恩
+            <input type="checkbox" name="heroes[]" value="viper">毒龙
+            <input type="checkbox" name="heroes[]" value="spe">幽鬼
+            <input type="checkbox" name="heroes[]" value="sf">影魔
+            <br><br>
+    <!--        时间和日期-->
+            <label>时间：<input type="time" name="time"></label>
+            <br><br>
+            <label>日期：<input type="date" name="date"></label>
+            <br><br>
+            <label>星期：<input type="week" name="week"></label>
+            <br><br>
+            <label>本地日期和时间：<input type="datetime-local" name="datetime-local"></label>
+            <br><br>
+            <input type="submit" value="提交">
+            <br><br>
+            <label>数值滚动条<input type="range" name="range" value="1" min="0" max="1000" step="100"></label>
+        </fieldset> 
+    </form> 
+            <br><br>
+    
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+<!--        需要通过php文件来限制上传文件大小-->
+        <input type="hidden" name="MAX_FILE_SIZE" value="1024">
+        
+        <label>文件上传<input type="file" name="file" accept="image/*" multiple></label>
+        <br><br>
+        <label>提交文件<input type="submit" name="submit"></label>
+        <br><br>
+        <label>邮箱(必填):<input type="email" name="email" pattern="\w[-\w.+]*@(qq.com|163.com)" placeholder="仅限于QQ和163邮箱" required></label><br>
+        <label>电话(必填):<input type="tel" name="tel" required></label><br>
+        <label>网址(必填):<input type="url" name="url" pattern="^((https|http)?:\/\/)[^\s]+" placeholder="仅限http和https开头的网址" size="30"></label>
+    </form>
+    
+    <br><br>
+<select name="cartoon">
+    <optgroup label="动漫">
+<!--        选项类名 -->
+        <option value="火影">火影</option>
+        <option value="柯南">柯南</option>
+        <option value="鬼灭">鬼灭</option>
+    </optgroup>
+</select>  
+    <br><br>
+<!--    input加入listdata选项-->
+<label>动画人物：<input type="text" name="cartoonmen" list="menlist"></label>
+<datalist id="menlist">
+    <option value="fish">小鱼儿</option>
+    <option value="flower">花无缺</option>
+    <option value="pig">小猪猪</option>
+</datalist>
+    <br><br>
+</body>
+</html> 

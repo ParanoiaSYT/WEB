@@ -20,6 +20,11 @@
 /*            合并边框*/
             border-collapse: collapse;
         }
+        thead th{
+            background: black;
+            color: grey
+        }
+        tbody th{background: black;color: lightblue}
         th{
             border: 1px solid red;
 /*        通过padding来调整单元格内边距*/
@@ -37,24 +42,57 @@
 <body>
     <table>
         <caption>这是表格标题</caption>
-        <tr>
-            <th>姓名</th>
-            <th>年龄</th>
-            <th>随便搞搞</th>
-        </tr>        
-        <tr>
-            <td>金吒</td>
-            <td>木吒</td>
-            <td>哪吒</td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>随便搞搞</th>
+            </tr>        
+        </thead>
+        <tbody>
+            <tr>
+                <th>金吒</th>
+                <td>18</td>
+                <td>大哥</td>
+            </tr>
+        </tbody>
+            <tr>
+                <th>木吒</th>
+                <td>17</td>
+                <td>二哥</td>
+            </tr> 
+            <tr>
+                <th>哪吒</th>
+                <td>16</td>
+                <td>小弟</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">上述表示都是SYT个人随意写的，请勿断章取义。</td>
+            </tr>
+        </tfoot>
     </table>
+
      <p><abbr title="一位诗人">顾城</abbr>黑夜给了我黑色的<br><span><ruby>眼<rt>yan</rt>睛<rt>jing</rt></ruby></span></p>
     <p>我却用它来寻找<br><span>光明</span></p>
+    
+    <table>
+        <colgroup>
+            <col style="background: red">
+            <col span="2" style="background: green">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td rowspan="3">666</td>
+            <td rowspan="3">10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>7</td>
+        </tr>
+    </table>
     <p>鲁迅有云：<q>学医救不了中国！</q><span><dfn>html</dfn>是个术语</span></p>
     <p><cite>《中国合伙人》</cite></p>
     <blockquote cite="https://baijiahao.baidu.com/s?id=1609010108265066549&wfr=spider&for=pc">我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病。它真讨厌，只有一点好，<mark>爱你</mark>。</blockquote>
